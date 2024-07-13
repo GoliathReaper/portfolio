@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+</body>
+</html>
+
+
+
+<div class="main-container">
+  <!-- Intro Text -->
+  <div class="name-m3">
+    <h1>Hi! I'm Yogesh</h1>
+    <p>A self-taught python enthusiast who finds joy in programming</p>
+  </div>
+  <!-- End -->
+
+   <div>
+    <button>
+        <p>Run Code</p>
+    </button>
+   </div>
+  
+  <!-- Button -->
+  
+  
+    <!-- Glass background effect -->
+    <div class="area" >
+            <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    
+            </ul>
+    <!-- End -->
+
+<div class="sub-container">
+    <div class="glass-morphism-container-hover-effect">
+        <pre><code>
+<span class="keyword">class</span> <span class="class-name">ContactInfo</span>:
+    <span class="keyword">def</span> <span class="method-name">__init__</span>(<span class="parameter">self, phone, email, stackoverflow, github</span>):
+        <span class="parameter">self.phone</span> = <span class="string">phone</span>
+        <span class="parameter">self.email</span> = <span class="string">email</span>
+        <span class="parameter">self.stackoverflow</span> = <span class="string">stackoverflow</span>
+        <span class="parameter">self.github</span> = <span class="string">github</span>
+
+    <span class="keyword">def</span> <span class="method-name">__str__</span>(<span class="parameter">self</span>):
+        <span class="keyword">return</span> f"<span class="string">{self.phone}</span> | <span class="string">{self.email}</span> | <span class="string">{self.stackoverflow}</span> | <span class="string">{self.github}</span>"
+
+
+<span class="keyword">class</span> <span class="class-name">Certification</span>:
+    <span class="keyword">def</span> <span class="method-name">__init__</span>(<span class="parameter">self, name, institution</span>):
+        <span class="parameter">self.name</span> = <span class="string">name</span>
+        <span class="parameter">self.institution</span> = <span class="string">institution</span>
+
+    <span class="keyword">def</span> <span class="method-name">__str__</span>(<span class="parameter">self</span>):
+        <span class="keyword">return</span> f"<span class="string">{self.name}</span> | <span class="string">{self.institution}</span>"
+
+
+<span class="keyword">class</span> <span class="class-name">Skill</span>:
+    <span class="keyword">def</span> <span class="method-name">__init__</span>(<span class="parameter">self, category, skills</span>):
+        <span class="parameter">self.category</span> = <span class="string">category</span>
+        <span class="parameter">self.skills</span> = <span class="string">skills</span>
+
+    <span class="keyword">def</span> <span class="method-name">__str__</span>(<span class="parameter">self</span>):
+        <span class="keyword">return</span> f"<span class="string">{self.category}</span>: <span class="string">{', '.join(self.skills)}</span>"
+
+
+<span class="keyword">class</span> <span class="class-name">Project</span>:
+    <span class="keyword">def</span> <span class="method-name">__init__</span>(<span class="parameter">self, name, description, link</span>):
+        <span class="parameter">self.name</span> = <span class="string">name</span>
+        <span class="parameter">self.description</span> = <span class="string">description</span>
+        <span class="parameter">self.link</span> = <span class="string">link</span>
+
+    <span class="keyword">def</span> <span class="method-name">_str_</span>(<span class="parameter">self</span>):
+        <span class="keyword">return</span> f"<span class="string">{self.name}</span>\n Description: <span class="string">{self.description}</span>\n Link: <span class="string">{self.link}</span>"
+
+
+<span class="keyword">class</span> <span class="class-name">Portfolio</span>:
+    <span class="keyword">def</span> <span class="method-name">__init__</span>(<span class="parameter">self, name, contact_info, professional_summary, certifications, skills, projects</span>):
+        <span class="parameter">self.name</span> = <span class="string">name</span>
+        <span class="parameter">self.contact_info</span> = <span class="string">contact_info</span>
+        <span class="parameter">self.professional_summary</span> = <span class="string">professional_summary</span>
+        <span class="parameter">self.certifications</span> = <span class="string">certifications</span>
+        <span class="parameter">self.skills</span> = <span class="string">skills</span>
+        <span class="parameter">self.projects</span> = <span class="string">projects</span>
+
+    <span class="keyword">def</span> <span class="method-name">__str__</span>(<span class="parameter">self</span>):
+        <span class="parameter">certs_str</span> = <span class="string">"\n"</span>.join([<span class="keyword">str</span>(<span class="parameter">cert</span>) <span class="keyword">for</span> <span class="parameter">cert</span> <span class="keyword">in</span> <span class="parameter">self.certifications</span>])
+        <span class="parameter">skills_str</span> = <span class="string">"\n"</span>.join([<span class="keyword">str</span>(<span class="parameter">skill</span>) <span class="keyword">for</span> <span class="parameter">skill</span> <span class="keyword">in</span> <span class="parameter">self.skills</span>])
+        <span class="parameter">projects_str</span> = <span class="string">"\n"</span>.join([<span class="keyword">str</span>(<span class="parameter">exp</span>) <span class="keyword">for</span> <span class="parameter">exp</span> <span class="keyword">in</span> <span class="parameter">self.projects</span>])
+        <span class="keyword">return</span> (
+            f"<span class="string">Name: {self.name}</span>\n"
+            f"<span class="string">Contact: {self.contact_info}</span>\n"
+            f"<span class="string">Professional Summary: {self.professional_summary}</span>\n"
+            f"<span class="string">Certifications:</span>\n<span class="string">{certs_str}</span>\n"
+            f"<span class="string">Skills:</span>\n<span class="string">{skills_str}</span>\n"
+            f"<span class="string">Projects:</span>\n<span class="string">{projects_str}</span>\n"
+        )
+
+
+<span class="comment"># Data</span>
+<span class="parameter">contact_info</span> = <span class="class-name">ContactInfo</span>(
+    <span class="string">"0123456789"</span>,
+    <span class="string">"m.yogesh1@live.com"</span>,
+    <span class="string">"https://stackoverflow.com/users/23163370"</span>,
+    <span class="string">"https://github.com/GoliathReaper"</span>
+)
+
+
+<span class="parameter">professional_summary</span> = (
+    <span class="string">"Hi, I am a self-taught programmer with ability in web automation, data wrangling, web scraping, AI training with datasets, "</span>
+    <span class="string">"and dataset generation for creating trained AI models."</span>
+)
+
+<span class="parameter">certifications</span> = [
+    <span class="class-name">Certification</span>( <span class="string">"Intro to Programming"</span>, <span class="string">"Kaggle"</span>),
+    <span class="class-name">Certification</span>(<span class="string">"Python"</span>, <span class="string">"Kaggle"</span>),
+    <span class="class-name">Certification</span>(<span class="string">"Intro to Machine Learning"</span>, <span class="string">"Kaggle"</span>),
+    <span class="class-name">Certification</span>(<span class="string">"100 Days of Code: The Complete Python Pro Bootcamp"</span>, <span class="string">"Udemy"</span>),
+    <span class="class-name">Certification</span>(<span class="string">"SIRC ICAI Certified Skill Development Program"</span>, <span class="string">"ICAI"</span>)
+]
+
+<span class="parameter">skills</span> = [
+    <span class="class-name">Skill</span>(<span class="string">"Languages"</span>, [<span class="string">"Python"</span>, <span class="string">"Golang"</span>, <span class="string">"SQL"</span>, <span class="string">"JavaScript"</span>, <span class="string">"TypeScript"</span>, <span class="string">"HTML"</span>, <span class="string">"JSON"</span>, <span class="string">"CSS"</span>]),
+    <span class="class-name">Skill</span>(<span class="string">"Frameworks"</span>, [<span class="string">"Flask"</span>, <span class="string">"Django"</span>, <span class="string">"React"</span>, <span class="string">"Node.js"</span>, <span class="string">"ExpressJS"</span>, <span class="string">"Bootstrap"</span>, <span class="string">"Selenium"</span>, <span class="string">"Beautiful Soup"</span>]),
+    <span class="class-name">Skill</span>(<span class="string">"DevOps and API Tools"</span>, [<span class="string">"Git"</span>, <span class="string">"Github"</span>, <span class="string">"Docker"</span>, <span class="string">"Postman"</span>]),
+    <span class="class-name">Skill</span>(<span class="string">"Others"</span>, [<span class="string">"SQL Server"</span>, <span class="string">"Linux (Configuring and Managing)"</span>])
+]
+
+
+<span class="parameter">projects</span> = [
+    <span class="class-name">Project</span>(
+        <span class="string">"UpWatch"</span>,
+        <span class="string">"Contributed to an open-source project that monitors website uptime and sends downtime alerts via email and SMS."</span>,
+        <span class="string">"https://github.com/GoliathReaper/UpWatch"</span>
+    ),
+    <span class="class-name">Project</span>(
+        <span class="string">"AI Job Apply Bot"</span>,
+        <span class="string">"Developed a bot using Python and Selenium to automatically apply for jobs."</span>,
+        <span class="string">"https://github.com/GoliathReaper/AI-Job-Apply-Bot"</span>
+    ),
+    <span class="class-name">Project</span>(
+        <span class="string">"Amazon Price Alert"</span>,
+        <span class="string">"Created a web app using Flask and Python to notify users when the prices of Amazon products drop to a certain level."</span>,
+        <span class="string">"https://github.com/GoliathReaper/Amazon-Price-Alert"</span>
+    ),
+    <span class="class-name">Project</span>(
+        <span class="string">"ML PDF Renamer"</span>,
+        <span class="string">"Built a ML based PDF renamer."</span>,
+        <span class="string">"https://github.com/GoliathReaper/ML_Pdf_renamer"</span>
+    ),
+    <span class="class-name">Project</span>(
+        <span class="string">"Spotify Top 100 Auto Add"</span>,
+        <span class="string">"Made a Python script to automatically add the current top 100 Billboard songs to a user's Spotify playlist."</span>,
+        <span class="string">"https://github.com/GoliathReaper/Spotify-Top-100-Auto-Add"</span>
+    ),
+]
+
+
+<span class="comment"># Creating the portfolio instance</span>
+<span class="parameter">yogesh_portfolio</span> = <span class="class-name">Portfolio</span>(
+    <span class="string">"Yogesh M"</span>,
+    <span class="parameter">contact_info</span>,
+    <span class="parameter">professional_summary</span>,
+    <span class="parameter">certifications</span>,
+    <span class="parameter">skills</span>,
+    <span class="parameter">projects</span>
+)
+
+<span class="comment"># Printing the portfolio</span>
+<span class="keyword">print</span>(<span class="parameter">yogesh_portfolio</span>)
+  </code></pre>
+
+
+
+
+            </div >
+    </div>
+  
+
+
+  </div>
+  
+</div>
