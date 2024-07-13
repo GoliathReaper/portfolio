@@ -304,12 +304,9 @@ button {
 /* END */
 
 
-  pre, code {
-            margin-bottom: 1em;
-        }
-
-
-
+pre, code {
+          margin-bottom: 1em;
+      }
 
 
 
@@ -345,31 +342,53 @@ button {
   }
 }
 
-@media (max-width: 480px) {
-  .glass-morphism-container1, .glass-morphism-container2, .glass-morphism-container3 {
-    padding: 20px;
-  }
+@media (max-width: 500px) {
+      body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      /* justify-content: center; */
+      align-items: center;
+      background-color: #00baed;
+      overflow-y: hidden; 
+      overflow-x: hidden; 
+    }
+   .main-container {
+        display: flex; /* Use flexbox */
+        flex-direction: column; /* Stack elements vertically */
+        justify-content: flex-start; /* Align items from top to bottom */
+        align-items: center;
+        background-color: #00baed;
+        overflow: hidden;
+        position: relative;
+    }
 
-  .glass-morphism-container-hover-effect {
-    height: 800px;
-    width: 200px;
-  }
+    .sub-container {
+        /* display: flex; */
+        /* margin-top: 10px; */
+        top: 0;
+        /* flex-direction: column;  */
+    }
 
-  .name-m3 {
-    font-size: 14px;
-  }
-
-  .context h1 {
-    font-size: 24px;
-  }
-
+    .name-m3 {
+      padding-top: 50px;
+        color: #008eb5;
+        font-family: 'Roboto', sans-serif;
+        position: relative;
+        text-align: center;
+        /* padding-left: 30px; */
+        margin-top: 20px 0; /* Optional: add spacing between elements */
+    }
+    
   button {
-    height: 2.5em;
-    width: 5em;
-    font-size: 0.6em;
+    /* height: 2.5em; */
+    /* width: 5em; */
+    /* font-size: 0.6em; */
   }
-  p {
-    font-size: 15px;
+  /* p {
     align-items: center;
-  }
+  } */
 }
