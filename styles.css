@@ -344,13 +344,9 @@ pre, code {
 
 @media (max-width: 500px) {
       body, html {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      width: 100%;
       display: flex;
       flex-direction: column;
-      /* justify-content: center; */
+      justify-content: center;
       align-items: center;
       background-color: #00baed;
       overflow-y: hidden; 
@@ -359,36 +355,34 @@ pre, code {
    .main-container {
         display: flex; /* Use flexbox */
         flex-direction: column; /* Stack elements vertically */
-        justify-content: flex-start; /* Align items from top to bottom */
-        align-items: center;
+        justify-content: flex-start;
         background-color: #00baed;
-        overflow: hidden;
-        position: relative;
     }
+    .glass-morphism-container-hover-effect {
+    font-size: 15px;
+    width: 350px;
 
-    .sub-container {
-        /* display: flex; */
-        /* margin-top: 10px; */
-        top: 0;
-        /* flex-direction: column;  */
-    }
-
-    .name-m3 {
-      padding-top: 50px;
-        color: #008eb5;
-        font-family: 'Roboto', sans-serif;
-        position: relative;
-        text-align: center;
-        /* padding-left: 30px; */
-        margin-top: 20px 0; /* Optional: add spacing between elements */
-    }
-    
-  button {
-    /* height: 2.5em; */
-    /* width: 5em; */
-    /* font-size: 0.6em; */
   }
-  /* p {
-    align-items: center;
-  } */
+  .sub-container{
+      top: 0;
+      margin-top: 0px;
+      overflow-x: hidden;
+      align-items: center;
+      padding-top: 0;
+      padding-right: 0;
+      padding-left: 0;
+    }
+  pre, code {
+      margin-bottom: 10em;
+      padding: 0;
+      margin-top: 0;
+    }
+    .parameter {
+      padding: 0px;
+    }
+  .name-m3 {
+    padding-top: 50px;
+    font-size: 15px;
+        
+  }
 }
